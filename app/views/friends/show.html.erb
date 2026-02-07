@@ -1,0 +1,26 @@
+<p>
+  <strong>
+    <%=@friend.first_name%>
+    <%=@friend.last_name%>
+  </strong>
+</p>
+
+<p>
+  <%= @friend.email %>
+</p>
+
+<p>
+  <%= @friend.phone %>
+</p>
+
+<p>
+  <%= @friend.twitter %>
+</p>
+
+
+<div>
+  <%= link_to "Edit", edit_friend_path(@friend), class: "btn btn-secondary" %>
+  <%= link_to "Back", friends_path, class: "btn btn-secondary" %>
+  <br><br/>
+  <%= button_to "Delete", @friend, method: :delete, class: "btn btn-secondary" %>
+</div>
